@@ -65,6 +65,14 @@ img {
 @media (max-width: 750px) {
   .top {
     grid-template-areas:
+      "hero hero"
+      "cta1 cta2";
+  }
+}
+
+@media (max-width: 500px) {
+  .top {
+    grid-template-areas:
       "hero"
       "cta1"
       "cta2";
@@ -117,10 +125,43 @@ img {
 #menu-list {
   display: grid;
   list-style: none;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding: 0;
 }
 
-.menu > button {
-  display: none;
+@media (max-width: 750px) {
+  #menu-list {
+    grid-auto-flow: row;
+  }
+}
+
+#menu-list > * {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  grid-gap: 20px;
+}
+
+.feature {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.feature > * {
+  text-align: center;
 }
 
 .icon {

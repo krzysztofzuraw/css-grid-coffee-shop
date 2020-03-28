@@ -3,3 +3,5 @@
 Sample project to play with CSS Grid.
 
 Heavily inspired by [CSS Grid](https://cssgrid.io/) course by Wes Bos.
+
+Icons by Eric M. Ellis from the Noun Project.
