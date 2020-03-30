@@ -4,7 +4,7 @@
   "description": "Sample project to play with grid",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files *.css"
+    "start": "browser-sync start --server --files *.css *.html"
   },
   "repository": {
     "type": "git",
